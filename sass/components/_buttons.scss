@@ -1,0 +1,83 @@
+input[type="submit"],
+button,
+.btn {
+    -webkit-appearance: none;
+    @extend %base-font-style;
+    min-width: 150px;
+    font-family: $font-family--2;
+    padding: 0px 30px;
+    background-color: $accent-color;
+    color: $shade__dark--1;
+    -webkit-text-fill-color: $shade__dark--1;
+    border: 3px solid $accent-color--dark;
+    outline: 2px solid $accent-color;
+    position: relative;
+    transition: $transition;
+    letter-spacing: 1px;
+    -webkit-tap-highlight-color: $accent-color--translucent;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: $transition;
+        background-image: url("../assets/images/noun_Knot_676658.svg");
+        background-size: 28px;
+        background-position: center -20%;
+        background-repeat: repeat-x;
+        mix-blend-mode: soft-light;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        color: $shade__dark--1;
+        -webkit-text-fill-color: $shade__dark--1;
+        border-color: $accent-color--darker;
+
+        &:after {
+            opacity: 0.35;
+        }
+    }
+
+    &:focus {
+        outline: 9px double $accent-color;
+    }
+}
+
+/* TOOLTIP */
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+    .tooltip__text {
+        width: 150px;
+        background-color: $shade__dark--2;
+        color: $main-color;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+        transition: opacity 0.3s;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: $shade__dark--2 transparent transparent transparent;
+        }
+    }
+}

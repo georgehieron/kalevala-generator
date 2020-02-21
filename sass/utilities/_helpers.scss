@@ -1,0 +1,33 @@
+.margin--flex {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+    }
+}
+
+.margin--flex--small {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+
+.viewport-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.transparent {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.collapsed {
+    height: 0;
+}
+
+.hidden {
+    display: none;
+}

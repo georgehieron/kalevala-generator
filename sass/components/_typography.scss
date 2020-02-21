@@ -1,0 +1,140 @@
+%base-font-style {
+    font-family: $font-family--1;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+body {
+    @extend %base-font-style;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family--2;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 56px;
+    margin-bottom: $font-margin--bottom;
+
+    @media screen and (min-width: 768px) {
+        font-size: 55px;
+        line-height: 70px;
+    }
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: $font-margin--bottom;
+
+    @media screen and (min-width: 768px) {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: $font-margin--bottom;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+h4,
+h5,
+h6 {
+    @extend %base-font-style;
+    margin-bottom: $font-margin--bottom;
+}
+
+p {
+    @extend %base-font-style;
+    margin-bottom: $font-margin--bottom;
+}
+
+a {
+    color: $main-color;
+    transition: $transition;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+        color: $main-color--light;
+    }
+
+    &:focus {
+        outline: 3px solid $main-color--light;
+        outline-offset: 3px;
+    }
+}
+
+.tip {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: $main-color--light;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+small,
+.small {
+    font-size: 12px;
+    line-height: 18px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+.main-title {
+    text-align: center;
+}
+
+.text--lighter {
+    color: $main-color--light;
+}
+
+.text--accent {
+    color: $font-color--4;
+}
+
+.text--gradient {
+    background: $base-color--dark; // Fallback
+    background: linear-gradient(90deg, $main-color--dark 0%, $main-color--light 50%, $main-color--dark 100%);
+    color: $shade__light--1; // Fallback
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+::-moz-selection {
+    background: rgba(224,175,51,0.5);
+    color: $main-color--light;
+}
+
+::selection {
+    background: rgba(224,175,51,0.5);
+    color: $main-color--light;
+}

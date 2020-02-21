@@ -1,0 +1,47 @@
+$width--1: 940px;
+
+$base-color: #1d4f57;
+$base-color--mid: darken($base-color, 10%);
+$base-color--dark: darken($base-color, 20%);
+
+$main-color: rgb(151, 217, 248);
+$main-color--light: #c3f7ff;
+$main-color--dark: darken($main-color, 15%);
+
+$accent-color: #dcb058;
+$accent-color--light: lighten($accent-color, 15%);
+$accent-color--dark: darken($accent-color, 15%);
+$accent-color--darker: darken($accent-color, 25%);
+$accent-color--translucent: rgba(55,77,164,0.5);
+
+$shade__light--1: #d8d8d8;
+$shade__light--2: #cfcfcf;
+$shade__light--3: #bfbfbf;
+$shade__light--4: #aeaeae;
+
+// Sword colours
+$sword--metal--light: goldenrod;
+$sword--metal--dark: darkgoldenrod;
+$sword--blade--light: $shade__light--1;
+$sword--blade--dark: $shade__light--2;
+$sword--grip--light: darkred;
+$sword--grip--dark: #3a000b;
+
+$shade__dark--1: #282828;
+$shade__dark--2: rgba(40,40,40,0.8);
+
+// Font families
+$font-family--1: 'Grenze', Times New Roman, serif;
+$font-family--2: 'Pirata One', Times New Roman, serif;
+
+// Font colors
+$font-color--1: $main-color--light;
+$font-color--2: $main-color;
+$font-color--3: $shade__light--1;
+$font-color--4: $accent-color--light;
+
+// Font margins
+$font-margin--bottom: 20px;
+
+// Transitions
+$transition: 0.3s ease all;

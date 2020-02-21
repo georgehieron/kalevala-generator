@@ -45,6 +45,7 @@ lineSlider.oninput = function() {
 }
 
 function newKalevala() {
+    var startLine = [];
     var startLine = Math.floor(Math.random() * (kalevala.length) );
     var endLine = [];
     // If the sum of the start line + number of lines to generate is less

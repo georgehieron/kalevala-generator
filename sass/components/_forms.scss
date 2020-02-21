@@ -1,0 +1,190 @@
+form {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input,
+label {
+    -webkit-tap-highlight-color: $accent-color--translucent;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+input[type=checkbox] {
+    opacity: 0;
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+input[type=checkbox] + label {
+    position: relative;
+    margin-left: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    padding-left: 30px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 24px;
+        width: 24px;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: left;
+        padding-top: 1px;
+        padding-left: 1px;
+        border: 3px solid $main-color;
+        color: $main-color;
+        outline: 0;
+        transition: $transition;
+    }
+}
+
+input[type=checkbox]:focus + label {
+    &:before {
+        outline: 3px solid $main-color;
+        outline-offset: 3px;
+    }
+}
+
+input[type=checkbox]:checked + label {
+    &:before {
+        content: "✓";
+    }
+}
+
+input[type=range]::-moz-focus-outer {
+    border: 0;
+}
+
+.line-range {
+    -webkit-appearance: none;
+    width: 250px;
+    height: 25px;
+    background: $shade__light--3;
+    outline: none;
+
+    &:focus {
+        &::-webkit-slider-thumb,
+        &::-moz-range-thumb {
+            outline: 2px dashed $main-color--light;
+            outline-offset: 2px;
+        }
+    }
+}
+
+.line-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    background: $main-color;
+    border-radius: 50%;
+    cursor: grabbing;
+    z-index: 2;
+    background-image: url("../assets/images/noun_Round_Shield_955928.svg");
+    background-repeat: no-repeat;
+    background-size: 98px;
+    background-position: center 33%;
+}
+
+.line-range::-moz-range-thumb {
+    width: 50px;
+    height: 50px;
+    background: $main-color;
+    border-radius: 50%;
+    cursor: grabbing;
+    z-index: 2;
+    background-image: url("../assets/images/noun_Round_Shield_955928.svg");
+    background-repeat: no-repeat;
+    background-size: 98px;
+    background-position: center 33%;
+}
+
+// SWORD STYLES
+.sword--container {
+    text-align: center;
+
+    span.lines {
+        display: block;
+    }
+}
+
+.sword {
+    height: 50px;
+    width: 280px;
+    display: inline-block;
+    position: relative;
+    filter: drop-shadow(2px 3px 3px $shade__dark--2);
+
+    @media screen and (min-width: 576px) {
+        width: 400px;
+    }
+
+    .blade,
+    .guard,
+    .grip,
+    .pommel {
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .guard,
+    .pommel {
+        background-color: $sword--metal--light;
+        background: linear-gradient(135deg, $sword--metal--dark 0%, $sword--metal--light 100%);
+    }
+
+    .blade {
+        right: 0;
+        height: 40%;
+        width: 80%;
+        background-color: $shade__light--2;
+        background: linear-gradient(135deg, $shade__light--2 0%, $shade__light--1 100%);
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        box-shadow: 0rem -5px 0 0 rgba(110,110,110,.2) inset;
+    }
+
+    .guard {
+        left: 18%;
+        width: 2.5%;
+        height: 100%;
+        border-radius: 25%;
+        z-index: 2;
+    }
+
+    .grip {
+        left: 2%;
+        height: 30%;
+        width: 18%;
+        border-top-right-radius: 0%;
+        border-top-left-radius: 40%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 40%;
+        background-color: $sword--grip--dark;
+        background: linear-gradient(180deg, $sword--grip--dark 0%, $sword--grip--light 100%);
+    }
+
+    .pommel {
+        left: 0;
+        height: 50%;
+        width: 4%;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 5px;
+    }
+}

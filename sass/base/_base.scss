@@ -1,0 +1,113 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+    color: $font-color--1;
+	background-color: $base-color;
+}
+
+.texture {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	min-height: 100vh;
+	background-color: $base-color;
+	background-image: url("../assets/images/white-wall-3-2.png");
+	padding-top: 20px;
+	padding-bottom: 40px;
+
+	@media screen and (min-width: 768px) {
+		padding-top: 40px;
+	}
+}
+
+.container {
+    max-width: $width--1;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+.top-section {
+	position: relative;
+	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		text-align: left;
+	}
+
+	&:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.3;
+        background-image: url("../assets/images/noun_Knot_676658.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        mix-blend-mode: soft-light;
+    }
+}
+
+.intro,
+.range-and-copy-button {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
+		margin-bottom: 40px;
+    }
+}
+
+.intro__lines {
+	margin-bottom: 20px;
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 0;
+	}
+}
+
+.intro__generate {
+	min-width: 250px;
+	margin-bottom: 20px;
+
+	@media screen and (min-width: 768px) {
+		text-align: right;
+		margin-bottom: 0;
+		margin-left: 20px;
+	}
+}
+
+.range-and-copy-button {
+	text-align: center;
+	margin-bottom: 40px;
+
+	@media screen and (min-width: 768px) {
+		text-align: left;
+	}
+}
+
+.celtic-knot {
+    height: 55px;
+    background-image: url("../assets/images/noun_wave_2844840-2.png");
+    background-repeat: repeat-x;
+    background-size: 90px;
+    background-position: center -24px;
+	opacity: 1;
+	// mix-blend-mode: color-dodge;
+
+	&.celtic-knot--last {
+		transition: $transition;
+	}
+}
+
+footer {
+	justify-self: flex-end;
+	margin-top: auto;
+}

@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Kalevala Ipsum</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Almendra|Almendra+SC&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pirata+One&display=swap&subset=latin-ext" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="texture">
@@ -33,7 +34,7 @@
                 <div class="intro__generate">
                     <form>
                         <input type="checkbox" name="mieleni" value="mieleni" id="mieleni">
-                        <label for="mieleni">Start with 'Mieleni minun tekevi...'</label>
+                        <label for="mieleni">Start with<br>'Mieleni minun tekevi...'</label>
                     </form>
 
                     <button onclick="newKalevala()">Generate&nbsp;&nbsp;Kalevala</button>
@@ -47,7 +48,7 @@
         <section class="kalevala--container container viewport-padding collapsed transparent" id="kalevala--container">
 
             <div class="range-and-copy-button">
-                <div id="line-span" class="text--lighter"></div>
+                <div id="line-span" class="text--accent"></div>
 
                 <div class="tooltip transparent" id="copy-button">
                     <button onClick="copyToClipboard('kalevala')">

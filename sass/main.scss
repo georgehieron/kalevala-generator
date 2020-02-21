@@ -1,0 +1,16 @@
+// RUN THIS IN PROJECT TO COMPILE AND WATCH:
+// sass --watch sass:css --style compressed
+
+// Base
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/base';
+
+// Components
+@import 'components/kalevala';
+@import 'components/typography';
+@import 'components/buttons';
+@import 'components/forms';
+
+// Utilities
+@import "utilities/helpers";
