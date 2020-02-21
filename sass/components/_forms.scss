@@ -1,6 +1,11 @@
 form {
-    margin-bottom: 20px;
     position: relative;
+    max-width: 15rem;
+    margin: 0 auto 20px;
+
+    @media screen and (min-width: 768px) {
+        max-width: none;
+    }
 }
 
 input,
@@ -27,7 +32,7 @@ input[type=checkbox] + label {
     margin-left: 1rem;
     display: flex;
     text-align: center;
-    justify-content: right;
+    justify-content: center;
     padding-left: 30px;
 
     &:before {
@@ -47,6 +52,10 @@ input[type=checkbox] + label {
         color: $main-color;
         outline: 0;
         transition: $transition;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: right;
     }
 }
 
@@ -88,7 +97,8 @@ input[type=range]::-moz-focus-outer {
     appearance: none;
     width: 50px;
     height: 50px;
-    background: $main-color;
+    background: $accent-color;
+    filter: invert(100%) brightness(95%);
     border-radius: 50%;
     cursor: grabbing;
     z-index: 2;
@@ -101,11 +111,12 @@ input[type=range]::-moz-focus-outer {
 .line-range::-moz-range-thumb {
     width: 50px;
     height: 50px;
-    background: $main-color;
+    background: $accent-color;
+    filter: invert(100%) brightness(95%);
     border-radius: 50%;
     cursor: grabbing;
     z-index: 2;
-    background-image: url("../assets/images/noun_Round_Shield_955928.svg");
+    background-image: url("../assets/images/noun_Round Shield_955926.svg");
     background-repeat: no-repeat;
     background-size: 98px;
     background-position: center 33%;

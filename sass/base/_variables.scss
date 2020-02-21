@@ -20,12 +20,12 @@ $shade__light--3: #bfbfbf;
 $shade__light--4: #aeaeae;
 
 // Sword colours
-$sword--metal--light: goldenrod;
-$sword--metal--dark: darkgoldenrod;
-$sword--blade--light: $shade__light--1;
+$sword--metal--light: $shade__light--3;
+$sword--metal--dark: darken($shade__light--4, 10%);
+$sword--blade--light: lighten($shade__light--1, 5%);
 $sword--blade--dark: $shade__light--2;
-$sword--grip--light: darkred;
-$sword--grip--dark: #3a000b;
+$sword--grip--light: #624207;
+$sword--grip--dark: #402d0f;
 
 $shade__dark--1: #282828;
 $shade__dark--2: rgba(40,40,40,0.8);

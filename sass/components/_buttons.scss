@@ -5,7 +5,7 @@ button,
     @extend %base-font-style;
     min-width: 150px;
     font-family: $font-family--2;
-    padding: 0px 30px;
+    padding: 0px 40px;
     background-color: $accent-color;
     color: $shade__dark--1;
     -webkit-text-fill-color: $shade__dark--1;
@@ -16,20 +16,35 @@ button,
     letter-spacing: 1px;
     -webkit-tap-highlight-color: $accent-color--translucent;
 
+    &:before,
     &:after {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
+        top: 0; 
+        height: 1.6rem;
+        width: 1.6rem;
         opacity: 0;
         transition: $transition;
-        background-image: url("../assets/images/noun_Knot_676658.svg");
-        background-size: 28px;
-        background-position: center -20%;
-        background-repeat: repeat-x;
+        background-image: url("../assets/images/noun_Knot_676661.svg");
+        background-size: 1.5rem;
+        background-position: center 2px;
+        background-repeat: no-repeat;
         mix-blend-mode: soft-light;
+
+        @media screen and (min-width: 768px) {
+            height: 1.7rem;
+            width: 1.7rem;
+            background-size: 1.55rem;
+            background-position: center 3px;
+        }
+    }
+
+    &:before {
+        left: .3rem;
+    }
+
+    &:after {
+        right: .3em;
     }
 
     &:active,
@@ -40,8 +55,9 @@ button,
         -webkit-text-fill-color: $shade__dark--1;
         border-color: $accent-color--darker;
 
+        &:before,
         &:after {
-            opacity: 0.35;
+            opacity: 0.7;
         }
     }
 
