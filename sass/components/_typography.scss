@@ -1,13 +1,13 @@
 %base-font-style {
     font-family: $font-family--1;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
     font-weight: bold;
     letter-spacing: 0.2px;
 
     @media screen and (min-width: 768px) {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
     }
 }
 
@@ -25,35 +25,35 @@ h6 {
 }
 
 h1 {
-    font-size: 44px;
-    line-height: 56px;
+    font-size: 3.5rem;
+    line-height: 4rem;
     margin-bottom: $font-margin--bottom;
 
     @media screen and (min-width: 768px) {
-        font-size: 55px;
-        line-height: 70px;
+        font-size: 4rem;
+        line-height: 4.5rem;
     }
 }
 
 h2 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 2rem;
+    line-height: 2.5rem;
     margin-bottom: $font-margin--bottom;
 
     @media screen and (min-width: 768px) {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 3rem;
+        line-height: 3.5rem;
     }
 }
 
 h3 {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
     margin-bottom: $font-margin--bottom;
 
     @media screen and (min-width: 768px) {
-        font-size: 24px;
-        line-height: 40px;
+        font-size: 1.6rem;
+        line-height: 2rem;
     }
 }
 
@@ -87,25 +87,25 @@ a {
 
 .tip {
     display: block;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: $main-color--light;
     margin-bottom: 0;
 
     @media screen and (min-width: 768px) {
-        font-size: 18px;
-        line-height: 27px;
+        font-size: 1.1rem;
+        line-height: 1.6rem;
     }
 }
 
 small,
 .small {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: .75rem;
+    line-height: 1.3rem;
 
     @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 21px;
+        font-size: .85rem;
+        line-height: 1.5rem;
     }
 }
 
@@ -130,11 +130,11 @@ small,
 }
 
 ::-moz-selection {
-    background: rgba(224,175,51,0.5);
-    color: $main-color--light;
+    background: rgba(220, 176, 88, 0.6);
+    color: $shade__dark--1;
 }
 
 ::selection {
-    background: rgba(224,175,51,0.5);
-    color: $main-color--light;
+    background: rgba(220, 176, 88, 0.6);
+    color: $shade__dark--1;
 }

@@ -29,10 +29,11 @@ input[type=checkbox] {
 
 input[type=checkbox] + label {
     position: relative;
-    margin-left: 1rem;
     display: flex;
     text-align: center;
+    line-height: 1.5rem;
     justify-content: center;
+    margin-left: 1rem;
     padding-left: 30px;
 
     &:before {
@@ -98,11 +99,11 @@ input[type=range]::-moz-focus-outer {
     width: 50px;
     height: 50px;
     background: $accent-color;
-    filter: invert(100%) brightness(95%);
+    filter: invert(100%);
     border-radius: 50%;
     cursor: grabbing;
     z-index: 2;
-    background-image: url("../assets/images/noun_Round_Shield_955928.svg");
+    background-image: url("../assets/images/noun_Round Shield_955926.svg");
     background-repeat: no-repeat;
     background-size: 98px;
     background-position: center 33%;
@@ -112,7 +113,7 @@ input[type=range]::-moz-focus-outer {
     width: 50px;
     height: 50px;
     background: $accent-color;
-    filter: invert(100%) brightness(95%);
+    filter: invert(100%);
     border-radius: 50%;
     cursor: grabbing;
     z-index: 2;
