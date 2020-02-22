@@ -120,4 +120,23 @@ body {
 footer {
 	justify-self: flex-end;
 	margin-top: auto;
+
+	.footer-links {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		>:last-child {
+			margin-top: 1rem;
+		}
+
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+			justify-content: space-between;
+
+			>:last-child {
+				margin-top: 0;
+			}
+		}
+	}
 }
