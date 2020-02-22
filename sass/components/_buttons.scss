@@ -72,9 +72,11 @@ button,
     display: inline-block;
 
     .tooltip__text {
+        font-family: $font-family--1;
         width: 150px;
         background-color: $shade__dark--2;
-        color: $main-color;
+        color: $main-color--dark;
+        -webkit-text-fill-color: $main-color--dark;
         text-align: center;
         border-radius: 6px;
         padding: 5px;

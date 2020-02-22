@@ -45,7 +45,7 @@ input[type=checkbox] + label {
         height: 24px;
         width: 24px;
         font-size: 1rem;
-        line-height: 1.2rem;
+        line-height: 1rem;
         text-align: left;
         padding-top: 1px;
         padding-left: 1px;
@@ -87,7 +87,7 @@ input[type=range]::-moz-focus-outer {
     &:focus {
         &::-webkit-slider-thumb,
         &::-moz-range-thumb {
-            outline: 2px dashed $main-color--light;
+            outline: 2px dashed $accent-color;
             outline-offset: 2px;
         }
     }
@@ -98,29 +98,32 @@ input[type=range]::-moz-focus-outer {
     appearance: none;
     width: 50px;
     height: 50px;
-    background: $accent-color;
-    filter: invert(100%);
+    background: $finland--blue;
     border-radius: 50%;
     cursor: grabbing;
     z-index: 2;
-    background-image: url("../assets/images/noun_Round Shield_955926.svg");
+    background-image: url("../assets/images/noun_Round_Shield_966697_white.png");
     background-repeat: no-repeat;
-    background-size: 98px;
+    background-size: 105px;
     background-position: center 33%;
+    box-shadow: inset 0 0 0 3px $shade__dark--3;
+    border-radius: 50%;
 }
 
 .line-range::-moz-range-thumb {
     width: 50px;
     height: 50px;
-    background: $accent-color;
-    filter: invert(100%);
+    background: $finland--blue;
     border-radius: 50%;
     cursor: grabbing;
     z-index: 2;
-    background-image: url("../assets/images/noun_Round Shield_955926.svg");
+    background-image: url("../assets/images/noun_Round_Shield_966697_white.png");
     background-repeat: no-repeat;
-    background-size: 98px;
-    background-position: center 33%;
+    background-size: 105px;
+    background-position: center 36%;
+    box-shadow: inset 0 0 0 3px $shade__dark--3;
+    border: 1px solid $shade__dark--1;
+    border-radius: 50%;
 }
 
 // SWORD STYLES

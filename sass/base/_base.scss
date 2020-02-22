@@ -30,7 +30,17 @@ body {
 
 .top-section {
 	position: relative;
-	text-align: center;
+
+	p {
+		text-align: center;
+	}
+
+	button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1rem;
+	}
 
 	@media screen and (min-width: 768px) {
 		text-align: left;

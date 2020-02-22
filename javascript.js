@@ -148,7 +148,7 @@ function copyToClipboard(id) {
 
     var tooltip = document.getElementById("tooltip__text");
     tooltip.classList.remove('transparent');
-    tooltip.innerHTML = "Copied! ⚔️";
+    tooltip.innerHTML = "Copied! 🇫🇮";
     setTimeout(function(){
         tooltip.classList.add("transparent");
     }, 1500);
