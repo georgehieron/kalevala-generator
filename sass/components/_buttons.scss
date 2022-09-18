@@ -2,9 +2,9 @@ input[type="submit"],
 button,
 .btn {
     -webkit-appearance: none;
-    @extend %base-font-style;
+    @include base-font-style;
     min-width: 150px;
-    font-family: $font-family--2;
+    font-family: $font-family--3;
     padding: 0px 40px;
     background-color: $accent-color;
     color: $shade__dark--1;

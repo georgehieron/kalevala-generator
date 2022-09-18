@@ -3,8 +3,10 @@
 }
 
 .kalevala {
+    font-feature-settings: 'clig', 'liga';
+
     p:first-of-type:first-letter {
-        font-family: $font-family--2;
+        font-family: $font-family--3;
         color: $main-color;
         float: left;
         font-size: 5rem;
@@ -24,7 +26,7 @@
             background: rgba(220, 176, 88, 0.6);
             color: $shade__dark--1;
         }
-        
+
         ::selection {
             background: rgba(220, 176, 88, 0.6);
             color: $shade__dark--1;

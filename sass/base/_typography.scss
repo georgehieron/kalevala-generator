@@ -1,18 +1,36 @@
-%base-font-style {
+@font-face {
+    font-family: "Pfeffer Simpelgotisch";
+    src: url("../assets/fonts/PfefferSimpelgotisch_normal.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Pfeffer Simpelgotisch Halbfett";
+    src: url("../assets/fonts/PfefferSimpelgotisch_halbfett.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Pfeffer Simpelgotisch Fett";
+    src: url("../assets/fonts/PfefferSimpelgotisch_fett.otf") format("opentype");
+    font-weight: 700;
+}
+
+@mixin base-font-style {
     font-family: $font-family--1;
-    font-size: 1.1rem;
-    line-height: 1.7rem;
-    font-weight: bold;
+    font-size: .85rem;
+    line-height: 1.5rem;
     letter-spacing: 0.2px;
 
     @media screen and (min-width: 768px) {
-        font-size: 1.2rem;
-        line-height: 1.9rem;
+        font-size: 1.05rem;
+        line-height: 1.75rem;
     }
 }
 
+html,
 body {
-    @extend %base-font-style;
+    @include base-font-style;
 }
 
 h1,
@@ -21,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-family--2;
+    font-family: $font-family--3;
 }
 
 h1 {
@@ -60,12 +78,12 @@ h3 {
 h4,
 h5,
 h6 {
-    @extend %base-font-style;
+    @include base-font-style;
     margin-bottom: $font-margin--bottom;
 }
 
 p {
-    @extend %base-font-style;
+    @include base-font-style;
     margin-bottom: $font-margin--bottom;
 }
 
@@ -83,6 +101,11 @@ a {
         outline: 3px solid $main-color--light;
         outline-offset: 3px;
     }
+}
+
+.lede,
+.tip {
+    font-family: $font-family--2;
 }
 
 .tip {
