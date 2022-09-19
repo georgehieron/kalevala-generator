@@ -3,10 +3,11 @@
 }
 
 .kalevala {
-    font-feature-settings: 'clig', 'liga';
+    font-feature-settings: 'liga';
 
     p:first-of-type:first-letter {
         font-family: $font-family--3;
+        font-feature-settings: normal;
         color: $main-color;
         float: left;
         font-size: 5rem;
