@@ -1,59 +1,61 @@
-*, *:after, *:before {
-	box-sizing: border-box;
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
 }
 
 body {
     color: $font-color--1;
-	background-color: $base-color;
+    background-color: $base-color;
 }
 
 .texture {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	min-height: 100vh;
-	background-color: $base-color;
-	background-image: url("../assets/images/white-wall-3-2.png");
-	padding-top: 20px;
-	padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    background-color: $base-color;
+    background-image: url("../assets/images/white-wall-3-2.png");
+    padding-top: 1.25rem;
+    padding-bottom: 2.5rem;
 
-	@media screen and (min-width: 48rem) {
-		padding-top: 40px;
-	}
+    @media screen and (min-width: 48rem) {
+        padding-top: 2.5rem;
+    }
 }
 
 .container {
     max-width: $width--1;
     margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
 }
 
 .top-section {
-	position: relative;
+    position: relative;
 
-	p {
-		text-align: center;
-	}
+    p {
+        text-align: center;
+    }
 
-	button {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 1rem;
-	}
+    button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
 
-	@media screen and (min-width: 48rem) {
-		text-align: left;
-	}
+    @media screen and (min-width: 48rem) {
+        text-align: left;
+    }
 
-	&:before {
+    &:before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        opacity: 0.24;
+        opacity: .24;
         background-image: url("../assets/images/noun_Knot_676658.png");
         background-size: contain;
         background-position: center;
@@ -71,72 +73,71 @@ body {
     @media screen and (min-width: 48rem) {
         flex-direction: row;
         justify-content: space-around;
-		margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 }
 
 .intro__lines {
-	margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 
-	@media screen and (min-width: 48rem) {
-		margin-bottom: 0;
-	}
+    @media screen and (min-width: 48rem) {
+        margin-bottom: 0;
+    }
 }
 
 .intro__generate {
-	min-width: 250px;
-	margin-bottom: 20px;
+    min-width: 15.625rem;
+    margin-bottom: 1.25rem;
 
-	@media screen and (min-width: 48rem) {
-		text-align: right;
-		margin-bottom: 0;
-		margin-left: 20px;
-	}
+    @media screen and (min-width: 48rem) {
+        text-align: right;
+        margin-bottom: 0;
+        margin-left: 1.25rem;
+    }
 }
 
 .range-and-copy-button {
-	text-align: center;
-	margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 2.5rem;
 
-	@media screen and (min-width: 48rem) {
-		text-align: left;
-	}
+    @media screen and (min-width: 48rem) {
+        text-align: left;
+    }
 }
 
 .celtic-knot {
-    height: 55px;
+    height: 3.4375rem;
     background-image: url("../assets/images/noun_wave_2844840-2.png");
     background-repeat: repeat-x;
-    background-size: 90px;
-    background-position: center -24px;
-	opacity: 1;
-	// mix-blend-mode: color-dodge;
+    background-size: 5.625rem;
+    background-position: center -1.5rem;
+    opacity: 1;
 
-	&.celtic-knot--last {
-		transition: $transition;
-	}
+    &.celtic-knot--last {
+        transition: $transition;
+    }
 }
 
 footer {
-	justify-self: flex-end;
-	margin-top: auto;
+    justify-self: flex-end;
+    margin-top: auto;
 
-	.footer-links {
-		display: flex;
-		flex-direction: column;
-		text-align: center;
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
 
-		>:last-child {
-			margin-top: 1rem;
-		}
+        > :last-child {
+            margin-top: 1rem;
+        }
 
-		@media screen and (min-width: 48rem) {
-			flex-direction: row;
-			justify-content: space-between;
+        @media screen and (min-width: 48rem) {
+            flex-direction: row;
+            justify-content: space-between;
 
-			>:last-child {
-				margin-top: 0;
-			}
-		}
-	}
+            > :last-child {
+                margin-top: 0;
+            }
+        }
+    }
 }

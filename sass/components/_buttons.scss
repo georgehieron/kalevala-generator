@@ -4,16 +4,16 @@ button,
     -webkit-appearance: none;
     @include base-font-style;
     font-family: $font-family--3;
-    min-width: 150px;
-    padding: 0px 40px;
+    min-width: 9.375rem;
+    padding: .1rem 2.5rem;
     background-color: $accent-color;
     color: $shade__dark--1;
     -webkit-text-fill-color: $shade__dark--1;
-    border: 3px solid $accent-color--dark;
-    outline: 2px solid $accent-color;
+    border: .1875rem solid $accent-color--dark;
+    outline: .125rem solid $accent-color;
     position: relative;
     transition: $transition;
-    letter-spacing: 1px;
+    letter-spacing: .1ch;
     -webkit-tap-highlight-color: $accent-color--translucent;
 
     &:before,
@@ -27,7 +27,7 @@ button,
         transition: $transition;
         background-image: url("../assets/images/noun_Knot_676661.svg");
         background-size: 1.5rem;
-        background-position: center 2px;
+        background-position: center .125rem;
         background-repeat: no-repeat;
         mix-blend-mode: soft-light;
 
@@ -35,7 +35,7 @@ button,
             height: 1.7rem;
             width: 1.7rem;
             background-size: 1.55rem;
-            background-position: center 3px;
+            background-position: center .1875rem;
         }
     }
 
@@ -57,12 +57,12 @@ button,
 
         &:before,
         &:after {
-            opacity: 0.7;
+            opacity: .7;
         }
     }
 
     &:focus {
-        outline: 9px double $accent-color;
+        outline: .5625rem double $accent-color;
     }
 }
 
@@ -73,27 +73,27 @@ button,
 
     .tooltip__text {
         font-family: $font-family--1;
-        width: 150px;
+        width: 9.375rem;
         background-color: $shade__dark--2;
         color: $main-color--dark;
         -webkit-text-fill-color: $main-color--dark;
         text-align: center;
-        border-radius: 6px;
-        padding: 5px;
+        border-radius: .375rem;
+        padding: .3125rem;
         position: absolute;
         z-index: 1;
         bottom: 150%;
         left: 50%;
-        margin-left: -75px;
-        transition: opacity 0.3s;
+        margin-left: -4.6875rem;
+        transition: opacity .3s;
 
         &:after {
             content: "";
             position: absolute;
             top: 100%;
             left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
+            margin-left: -.3125rem;
+            border-width: .3125rem;
             border-style: solid;
             border-color: $shade__dark--2 transparent transparent transparent;
         }

@@ -20,7 +20,7 @@
     font-family: $font-family--1;
     font-size: 1rem;
     line-height: 1.5rem;
-    letter-spacing: 0.2px;
+    letter-spacing: .2px;
 
     @media screen and (min-width: 48rem) {
         font-size: 1.1rem;
@@ -98,8 +98,8 @@ a {
     }
 
     &:focus {
-        outline: 3px solid $main-color--light;
-        outline-offset: 3px;
+        outline: .1875rem solid $main-color--light;
+        outline-offset: .1875rem;
     }
 }
 
@@ -153,11 +153,11 @@ small,
 }
 
 ::-moz-selection {
-    background: rgba(220, 176, 88, 0.6);
+    background: rgba(220, 176, 88, .6);
     color: $shade__dark--1;
 }
 
 ::selection {
-    background: rgba(220, 176, 88, 0.6);
+    background: rgba(220, 176, 88, .6);
     color: $shade__dark--1;
 }

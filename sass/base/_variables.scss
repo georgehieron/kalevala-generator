@@ -1,4 +1,4 @@
-$width--1: 940px;
+$width--1: 56.25rem;
 
 $base-color: #1d4f57;
 $base-color--mid: darken($base-color, 10%);
@@ -12,7 +12,7 @@ $accent-color: #dcb058;
 $accent-color--light: lighten($accent-color, 15%);
 $accent-color--dark: darken($accent-color, 15%);
 $accent-color--darker: darken($accent-color, 25%);
-$accent-color--translucent: rgba(220, 176, 88, 0.5);
+$accent-color--translucent: rgba(220, 176, 88, .5);
 
 $finland--blue: #0d328a;
 
@@ -30,13 +30,13 @@ $sword--grip--light: #624207;
 $sword--grip--dark: #402d0f;
 
 $shade__dark--1: #282828;
-$shade__dark--2: rgba(40,40,40,0.8);
+$shade__dark--2: rgba(40, 40, 40, .8);
 $shade__dark--3: #808080;
 
 // Font families
-$font-family--1: 'Pfeffer Simpelgotisch', Times New Roman, serif;
-$font-family--2: 'Pfeffer Simpelgotisch Halbfett', Times New Roman, serif;
-$font-family--3: 'Pfeffer Simpelgotisch Fett', Times New Roman, serif;
+$font-family--1: "Pfeffer Simpelgotisch", Times New Roman, serif;
+$font-family--2: "Pfeffer Simpelgotisch Halbfett", Times New Roman, serif;
+$font-family--3: "Pfeffer Simpelgotisch Fett", Times New Roman, serif;
 
 // Font colors
 $font-color--1: $main-color--light;
@@ -45,7 +45,7 @@ $font-color--3: $shade__light--1;
 $font-color--4: $accent-color--light;
 
 // Font margins
-$font-margin--bottom: 20px;
+$font-margin--bottom: 1.25rem;
 
 // Transitions
-$transition: 0.3s ease all;
+$transition: .3s ease all;

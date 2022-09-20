@@ -12,9 +12,9 @@
         float: left;
         font-size: 5rem;
         line-height: 4rem;
-        padding-top: 4px;
-        padding-right: 8px;
-        padding-left: 3px;
+        padding-top: .25rem;
+        padding-right: .5rem;
+        padding-left: .1875rem;
         font-weight: normal;
         margin-bottom: $font-margin--bottom;
 
@@ -24,12 +24,12 @@
         }
 
         ::-moz-selection {
-            background: rgba(220, 176, 88, 0.6);
+            background: rgba(220, 176, 88, .6);
             color: $shade__dark--1;
         }
 
         ::selection {
-            background: rgba(220, 176, 88, 0.6);
+            background: rgba(220, 176, 88, .6);
             color: $shade__dark--1;
         }
     }
