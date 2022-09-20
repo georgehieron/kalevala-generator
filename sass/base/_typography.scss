@@ -90,11 +90,14 @@ p {
 a {
     color: $main-color;
     transition: $transition;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    text-decoration-thickness: 0.1em;
 
     &:focus,
     &:hover {
         color: $main-color--light;
+        text-decoration-style: wavy;
     }
 
     &:focus {

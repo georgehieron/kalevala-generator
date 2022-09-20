@@ -4,12 +4,12 @@ $base-color: #1d4f57;
 $base-color--mid: darken($base-color, 10%);
 $base-color--dark: darken($base-color, 20%);
 
-$main-color: rgb(151, 217, 248);
+$main-color: #9ee0ff;
 $main-color--light: #c3f7ff;
 $main-color--dark: darken($main-color, 15%);
 
 $accent-color: #dcb058;
-$accent-color--light: lighten($accent-color, 15%);
+$accent-color--light: lighten($accent-color, 20%);
 $accent-color--dark: darken($accent-color, 15%);
 $accent-color--darker: darken($accent-color, 25%);
 $accent-color--translucent: rgba(220, 176, 88, .5);
