@@ -3,8 +3,8 @@ button,
 .btn {
     -webkit-appearance: none;
     @include base-font-style;
-    min-width: 150px;
     font-family: $font-family--3;
+    min-width: 150px;
     padding: 0px 40px;
     background-color: $accent-color;
     color: $shade__dark--1;
@@ -20,7 +20,7 @@ button,
     &:after {
         content: "";
         position: absolute;
-        top: 0; 
+        top: 0;
         height: 1.6rem;
         width: 1.6rem;
         opacity: 0;
