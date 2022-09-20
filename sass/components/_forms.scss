@@ -48,7 +48,7 @@ input[type=checkbox] + label {
         text-align: left;
         padding-top: 1px;
         padding-left: 1px;
-        border: 3px solid $main-color;
+        border: .1875rem solid $main-color;
         color: $main-color;
         outline: 0;
         transition: $transition;
@@ -57,14 +57,17 @@ input[type=checkbox] + label {
 
 input[type=checkbox]:focus + label {
     &:before {
-        outline: 3px solid $main-color;
-        outline-offset: 3px;
+        outline: .1875rem solid $main-color;
+        outline-offset: .1875rem;
     }
 }
 
 input[type=checkbox]:checked + label {
     &:before {
-        content: "✓";
+        background-image: url("../assets/images/tick.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -0.02em;
     }
 }
 
@@ -82,8 +85,8 @@ input[type=range]::-moz-focus-outer {
     &:focus {
         &::-webkit-slider-thumb,
         &::-moz-range-thumb {
-            outline: 2px dashed $accent-color;
-            outline-offset: 2px;
+            outline: .125rem dashed $accent-color;
+            outline-offset: .125rem;
         }
     }
 }
