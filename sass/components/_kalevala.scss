@@ -18,7 +18,7 @@
         font-weight: normal;
         margin-bottom: $font-margin--bottom;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 48rem) {
             font-size: 6.25rem;
             line-height: 5rem;
         }
@@ -37,7 +37,7 @@
     p:last-of-type {
         margin-bottom: $font-margin--bottom * 2;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 48rem) {
             margin-bottom: $font-margin--bottom * 3;
         }
     }

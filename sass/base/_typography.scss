@@ -22,7 +22,7 @@
     line-height: 1.5rem;
     letter-spacing: 0.2px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         font-size: 1.1rem;
         line-height: 1.75rem;
     }
@@ -47,7 +47,7 @@ h1 {
     line-height: 4rem;
     margin-bottom: $font-margin--bottom;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         font-size: 4rem;
         line-height: 4.5rem;
     }
@@ -58,7 +58,7 @@ h2 {
     line-height: 2.5rem;
     margin-bottom: $font-margin--bottom;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         font-size: 3rem;
         line-height: 3.5rem;
     }
@@ -69,7 +69,7 @@ h3 {
     line-height: 1.8rem;
     margin-bottom: $font-margin--bottom;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         font-size: 1.6rem;
         line-height: 2rem;
     }
@@ -115,7 +115,7 @@ a {
     color: $main-color--light;
     margin-bottom: 0;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         font-size: 1.1rem;
         line-height: 1.6rem;
     }
@@ -126,7 +126,7 @@ small,
     font-size: .75rem;
     line-height: 1.3rem;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         font-size: .85rem;
         line-height: 1.5rem;
     }

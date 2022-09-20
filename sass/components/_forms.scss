@@ -3,7 +3,7 @@ form {
     max-width: 15rem;
     margin: 0 auto 20px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         max-width: none;
     }
 }
@@ -55,7 +55,7 @@ input[type=checkbox] + label {
         transition: $transition;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         justify-content: right;
     }
 }
@@ -142,7 +142,7 @@ input[type=range]::-moz-focus-outer {
     position: relative;
     filter: drop-shadow(2px 3px 3px $shade__dark--2);
 
-    @media screen and (min-width: 576px) {
+    @media screen and (min-width: 36rem) {
         width: 400px;
     }
 
