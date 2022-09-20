@@ -29,10 +29,9 @@ input[type=checkbox] {
 
 input[type=checkbox] + label {
     position: relative;
-    display: flex;
+    display: block;
     text-align: center;
     line-height: 1.5rem;
-    justify-content: center;
     margin-left: 1rem;
     padding-left: 30px;
 
@@ -53,10 +52,6 @@ input[type=checkbox] + label {
         color: $main-color;
         outline: 0;
         transition: $transition;
-    }
-
-    @media screen and (min-width: 48rem) {
-        justify-content: right;
     }
 }
 
