@@ -28,7 +28,19 @@
     }
 }
 
-html,
+@mixin selection-styles {
+    background: $accent-color;
+    color: $shade__dark--1;
+}
+
+::-moz-selection {
+    @include selection-styles;
+}
+
+::selection {
+    @include selection-styles;
+}
+
 body {
     @include base-font-style;
 }
@@ -153,14 +165,4 @@ small,
     color: $shade__light--1; // Fallback
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-::-moz-selection {
-    background: rgba(220, 176, 88, .6);
-    color: $shade__dark--1;
-}
-
-::selection {
-    background: rgba(220, 176, 88, .6);
-    color: $shade__dark--1;
 }

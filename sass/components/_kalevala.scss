@@ -24,13 +24,11 @@
         }
 
         ::-moz-selection {
-            background: rgba(220, 176, 88, .6);
-            color: $shade__dark--1;
+            @include selection-styles;
         }
 
         ::selection {
-            background: rgba(220, 176, 88, .6);
-            color: $shade__dark--1;
+            @include selection-styles;
         }
     }
 
