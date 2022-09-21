@@ -33,7 +33,7 @@ input[type=checkbox] + label {
     text-align: center;
     line-height: 1.5rem;
     margin-left: 1rem;
-    padding-left: 30px;
+    padding-left: 2.5rem;
 
     &:before {
         content: "";
@@ -41,13 +41,13 @@ input[type=checkbox] + label {
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        height: 24px;
-        width: 24px;
+        height: 1.5rem;
+        width: 1.5rem;
         font-size: 1rem;
         line-height: 1rem;
         text-align: left;
-        padding-top: 1px;
-        padding-left: 1px;
+        padding-top: .0625rem;
+        padding-left: .0625rem;
         border: .1875rem solid $main-color;
         color: $main-color;
         outline: 0;
