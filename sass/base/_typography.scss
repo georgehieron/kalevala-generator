@@ -103,8 +103,8 @@ a {
     color: $main-color;
     transition: $transition;
     text-decoration: underline;
-    text-underline-offset: 0.3em;
-    text-decoration-thickness: 0.1em;
+    text-underline-offset: .3em;
+    text-decoration-thickness: .1em;
 
     &:focus,
     &:hover {
