@@ -90,8 +90,7 @@ input[type=range]::-moz-focus-outer {
     }
 }
 
-.line-range::-webkit-slider-thumb {
-    -webkit-appearance: none;
+@mixin shield-styles {
     appearance: none;
     width: 50px;
     height: 50px;
@@ -102,25 +101,21 @@ input[type=range]::-moz-focus-outer {
     background-image: url("../assets/images/noun_Round_Shield_966697_white.png");
     background-repeat: no-repeat;
     background-size: 105px;
-    background-position: center 33%;
-    box-shadow: inset 0 0 0 3px $shade__dark--3;
     border-radius: 50%;
 }
 
+.line-range::-webkit-slider-thumb {
+    @include shield-styles;
+
+    -webkit-appearance: none;
+    background-position: center 34%;
+}
+
 .line-range::-moz-range-thumb {
-    width: 50px;
-    height: 50px;
-    background: $finland--blue;
-    border-radius: 50%;
-    cursor: grabbing;
-    z-index: 2;
-    background-image: url("../assets/images/noun_Round_Shield_966697_white.png");
-    background-repeat: no-repeat;
-    background-size: 105px;
+    @include shield-styles;
+
     background-position: center 36%;
-    box-shadow: inset 0 0 0 3px $shade__dark--3;
     border: 1px solid $shade__dark--1;
-    border-radius: 50%;
 }
 
 // SWORD STYLES
