@@ -18,12 +18,12 @@
 
 @mixin base-font-style {
     font-family: $font-family--1;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
     letter-spacing: .02ch;
 
     @media screen and (min-width: 48rem) {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         line-height: 1.75rem;
     }
 }
@@ -138,11 +138,11 @@ a {
 
 small,
 .small {
-    font-size: .8rem;
+    font-size: .85rem;
     line-height: 1.3rem;
 
     @media screen and (min-width: 48rem) {
-        font-size: .9rem;
+        font-size: .95rem;
         line-height: 1.5rem;
     }
 }
