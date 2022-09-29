@@ -56,9 +56,9 @@ body {
         height: 100%;
         width: 100%;
         opacity: .24;
-        background-image: url("../assets/images/noun_Knot_676658.png");
-        background-size: contain;
-        background-position: center;
+        background-image: url("../assets/images/noun-knot-676658.svg");
+        background-size: 52%;
+        background-position: center 10%;
         background-repeat: no-repeat;
         mix-blend-mode: soft-light;
     }
@@ -110,10 +110,11 @@ body {
 
 .celtic-knot {
     height: 3.4375rem;
-    background-image: url("../assets/images/noun_wave_2844840-2.png");
+    // background-image: url("../assets/images/noun_wave_2844840-2.png");
+    background-image: url("../assets/images/noun-wave-2844840.svg");
     background-repeat: repeat-x;
     background-size: 5.625rem;
-    background-position: center -1.5rem;
+    background-position: center -.3rem;
     opacity: 1;
 
     &.celtic-knot--last {
@@ -122,8 +123,14 @@ body {
 }
 
 footer {
+    display: block;
+    width: 100%;
     justify-self: flex-end;
     margin-top: auto;
+
+    > * + * {
+        margin-top: 3rem;
+    }
 
     .footer-links {
         display: flex;
@@ -148,8 +155,28 @@ footer {
         }
     }
 
+    .attributions {
+        summary {
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:focus-visible {
+                outline: .1875rem solid $main-color--light;
+                outline-offset: .1875rem;
+            }
+        }
+
+        > small {
+            display: block;
+
+            + small {
+                margin-top: .2rem;
+            }
+        }
+    }
+
     .carbonbadge {
-        margin-top: 3rem;
         filter: grayscale(1);
 
         * {
