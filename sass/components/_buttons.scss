@@ -54,6 +54,9 @@ button,
         color: $shade__dark--1;
         -webkit-text-fill-color: $shade__dark--1;
         border-color: $accent-color--darker;
+        text-decoration: underline;
+        text-underline-offset: .2em;
+        text-decoration-thickness: .1em;
 
         &:before,
         &:after {
