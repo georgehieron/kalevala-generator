@@ -63,10 +63,18 @@ input[type=checkbox]:focus + label {
 }
 
 input[type=checkbox]:checked + label {
-    &:before {
-        background-image: url("../assets/images/tick.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 1.1rem;
+        left: .575rem;
+        display: block;
+        width: .4rem;
+        height: .7rem;
+        border-radius: 0;
+        border-right: .2rem solid $main-color;
+        border-bottom: .2rem solid $main-color;
+        transform: rotate(45deg);
     }
 }
 
