@@ -47,21 +47,6 @@ body {
     @media screen and (min-width: 48rem) {
         text-align: left;
     }
-
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        opacity: .24;
-        background-image: url("../assets/images/noun-knot-676658.svg");
-        background-size: 52%;
-        background-position: center 10%;
-        background-repeat: no-repeat;
-        mix-blend-mode: soft-light;
-    }
 }
 
 .intro,
